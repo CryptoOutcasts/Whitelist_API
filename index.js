@@ -5,6 +5,9 @@ const { exit } = require("process");
 
 
 app.use(exp.json());
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*")
+}) 
 let csvToJson = require('convert-csv-to-json');
 const { once } = require("events");
 const e = require("express");
