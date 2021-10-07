@@ -2,12 +2,17 @@ const exp = require("express");
 const app = exp();
 const fs = require("fs")
 const { exit } = require("process");
-
+const cors=require("cors");
 
 app.use(exp.json());
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*")
-}) 
+const corsOptions ={
+   origin:'*', 
+   credentials:true,            //access-control-allow-credentials:true
+   optionSuccessStatus:200,
+}
+app.use(cors(corsOptions))
+
+
 let csvToJson = require('convert-csv-to-json');
 const { once } = require("events");
 const e = require("express");
