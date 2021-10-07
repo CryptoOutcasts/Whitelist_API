@@ -3,6 +3,9 @@ const app = exp();
 const fs = require("fs")
 const { exit } = require("process");
 const cors=require("cors");
+const { once } = require("events");
+const e = require("express");
+const { json } = require("express");
 
 app.use(exp.json());
 const corsOptions ={
@@ -14,9 +17,6 @@ app.use(cors(corsOptions))
 
 
 let csvToJson = require('convert-csv-to-json');
-const { once } = require("events");
-const e = require("express");
-const { json } = require("express");
 
     let rawdata = fs.readFileSync('config.json');
     let config = JSON.parse(rawdata);
