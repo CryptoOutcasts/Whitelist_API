@@ -62,7 +62,7 @@ Install the heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
 
 Congratulations 🍰, you have now deployed your API online.
 #### to make sure everyting is working great:
-Grab the heroku url, or the url you hosted your api on. and then add /members to it
+Grab the heroku url, or the url you hosted your api on. and then add /whitelisted to it
 ```
 https://myherokyapp.herokuapp.com/whitelisted
 ```
