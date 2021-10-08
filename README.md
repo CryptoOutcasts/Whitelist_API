@@ -1,12 +1,15 @@
 # Whitelist_API
 
+
+## This repo is meant to be used with https://github.com/CryptoOutcasts/Candy_Machine_Whitelist_Site
+## after youre done with this repo and finalizing your API , you may proceed to Candy_Machine_Whitelist_Site
 This project is only experimental, use carefully. Im not responsible for any fatal errors for any project.
 Always use on testnet before using on mainnet
 This project works offchain and does not validate whitelisted users using on chain data !
 This repo is intended to be used with Candy Machine Mint site, or with my repo Candy_Machine_Whitelist_Site
 
 
-##How to run:
+## How to run:
 Clone the repo (obviously)
 
 ### 1) Install dependencies using 
