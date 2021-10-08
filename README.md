@@ -53,7 +53,7 @@ if you prefer tutorials, this one is good and features two options: https://www.
 Install the heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
 1. run: ```heroku login``` , and then login into your account.
 2. run ```git init```
-3. run ```heroku git:remote -a Name_Of_Your_Project```
+3. run ```heroku create Your_Project_Name```
 4. run ```git add .```
 5. run ```git commit -m "first-commit```
 6. run ```git push heroku master``` heroku will then supply you with two urls, one of which is the url of the API, the other is not important (the one with github in it)
