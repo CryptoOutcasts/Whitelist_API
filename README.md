@@ -12,7 +12,7 @@ Clone the repo (obviously)
 ### 1) Install dependencies using 
 ```yarn install```
 
-### 2) Add your own environmental variables
+### 2) Add your own environmental variables (.env)
 ```
 SECRET_KEY=__MY_KEY__
 ```
