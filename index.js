@@ -3,15 +3,12 @@ const app = exp();
 const fs = require("fs")
 const { exit } = require("process");
 const cors=require("cors");
-const { once } = require("events");
-const e = require("express");
-const { json } = require("express");
 require('dotenv').config()
 
 app.use(exp.json());
 const corsOptions ={
    origin:'*', 
-   credentials:true,            //access-control-allow-credentials:true
+   credentials:true,
    optionSuccessStatus:200,
 }
 app.use(cors(corsOptions))
@@ -40,7 +37,13 @@ if(!config.load_csv_onetime){
 }
 else{
     console.log("Skipping csv reload, config is set csv_run_onetime = true")
+    if(!config.loaded){
+        config.loaded = true
+        fs.writeFile('config.json', JSON.stringify(config), 'utf8', (err) =>{ if(err) console.log(err)});
+        console.log("Data reloaded due to config loaded = false")
+    }
 }
+
 
 
 

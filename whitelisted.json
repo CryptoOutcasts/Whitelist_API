@@ -1,1 +1,6 @@
-[{"member":"address1","reserve":2},{"member":"VzDChoEWttKvsxVFWtt7BRRDimGiHL98pVCdZibde2n","reserve":"5"}]
+[
+ {
+  "member": "address1",
+  "reserve": "5"
+ }
+]
