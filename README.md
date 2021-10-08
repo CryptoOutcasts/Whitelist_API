@@ -12,10 +12,7 @@ This repo is intended to be used with Candy Machine Mint site, or with my repo C
 ## How to run:
 Clone the repo (obviously)
 
-### 1) Install dependencies using 
-```yarn install```
-
-### 2) Add your own environmental variables (.env)
+### 1) Add your own environmental variables (.env)
 ```
 SECRET_KEY=__MY_KEY__
 ```
@@ -23,7 +20,7 @@ Your API authentication key used to prevent someone else from accessing the api 
 #### after you are done rename ".env.sample" to ".env"
 
 
-### 3) create a csv containing the list of whitelisted users and reserves for each user
+### 2) create a csv containing the list of whitelisted users and reserves for each user
 
 #### REQUIREMENTS FOR CSV FILE:
 1) Must be comma delimted
@@ -35,7 +32,7 @@ each row has a member which is the address of the user you wish to whitelist, re
 4) Must be in the main directory, do not put in a seperate file called assets or similar.
     
 
-### 4) Edit the config.json to your needs
+### 3) Edit the config.json to your needs
 #### To reload the csv list everytime the script runs
 ```set load_csv_onetime = false```
 #### If you wish to run the script once and not have it run everytime
@@ -46,7 +43,7 @@ each row has a member which is the address of the user you wish to whitelist, re
 
 
 
-### 5) Upload to a hosting server, we recommend heroku. if you decide to use heroku here are the steps to setting that up:
+### 4) Upload to a hosting server, we recommend heroku. if you decide to use heroku here are the steps to setting that up:
 if you prefer tutorials, this one is good and features two options: https://www.youtube.com/watch?v=Rz886HkV1j4&t=733s
 #### IMPORTANT: MAKE SURE TO FOLLOW THE STEPS FOR ADDING .ENV TO THE HOSTING SYSTEM (included in the video)
 #### ALL COMMANDS SHOULD BE RAN IN THE MAIN DIRECTORY 
