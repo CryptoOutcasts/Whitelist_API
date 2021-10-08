@@ -9,8 +9,7 @@ This repo is intended to be used with Candy Machine Mint site, or with my repo C
 How to run:
 Clone the repo (obviously)
 
-1) Install dependencies
-yarn install
+1) Install dependencies using yarn install
 
 2) add your own API key to restrict others from using your API
 located in .env file
@@ -24,12 +23,12 @@ REQUIREMENTS FOR CSV FILE:
     4) Must be in the main directory, do not put in a seperate file called assets or similar.
 
 4) Edit the config.json to your needs
-To reload the csv list everytime the script runs
-set load_csv_onetime = true
+        To reload the csv list everytime the script runs
+		set load_csv_onetime = false
 
-If you wish to run the script once and not have it run everytime
-set load_csv_one time = false
-and loaded = false
+		If you wish to run the script once and not have it run everytime
+		set load_csv_one time = true
+		and loaded = false
 
 
 
