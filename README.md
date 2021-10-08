@@ -9,7 +9,8 @@ This repo is intended to be used with Candy Machine Mint site, or with my repo C
 How to run:
 Clone the repo (obviously)
 
-1) Install dependencies using yarn install
+1) Install dependencies using 
+		```yarn install```
 
 2) add your own API key to restrict others from using your API
 located in .env file
@@ -37,13 +38,13 @@ if you prefer tutorials, this one is good and features two options: https://www.
 IMPORTANT: MAKE SURE TO FOLLOW THE STEPS FOR ADDING .ENV TO THE HOSTING SYSTEM (included in the video)
 ALL COMMANDS SHOULD BE RAN IN THE MAIN DIRECTORY 
     1) Install the heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
-    2) run: "heroku login" , and then login into your account.
-    3) run "git init"
-    4) run "heroku git:remote -a Name_Of_Your_Project"
-    5) run "git add ."
-    6) run "git commit -m "first-commit"
-    7) run "git push heroku master" heroku will then supply you with two urls, one of which is the url of the API, the other is not important (the one with github in it)
-    8) after that is done run "heroku config:set API_KEY=Your_API_Key"
+    2) run: ```heroku login``` , and then login into your account.
+    3) run ```git init```
+    4) run ```heroku git:remote -a Name_Of_Your_Project```
+    5) run ```git add .```
+    6) run ```git commit -m "first-commit```
+    7) run ```git push heroku master``` heroku will then supply you with two urls, one of which is the url of the API, the other is not important (the one with github in it)
+    8) after that is done run ```heroku config:set API_KEY=Your_API_Key```
     Your_API_Key stands for the key you put in the env file in step 2
 
 Congratulations 🍰, you have now deployed your API online.
