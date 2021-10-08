@@ -23,13 +23,13 @@ Your API authentication key used to prevent someone else from accessing the api 
 ### 3) create a csv containing the list of whitelisted users and reserves for each user
 
 #### REQUIREMENTS FOR CSV FILE:
-    1) Must be comma delimted
-    2) Must have two Columns: 1)member 2)reserve
-    ```
-    member is the address of the members, reserve is how many nfts can they this address mint
-    ```
-    3) Must be named whitelisted.csv
-    4) Must be in the main directory, do not put in a seperate file called assets or similar.
+1) Must be comma delimted
+2) Must have two Columns: 1)member 2)reserve , Its important to name the two columns exactly like this
+```
+each row has a member which is the address of the user you wish to whitelist, reserve is how many nfts can they this address mint
+```
+3) Must be named whitelisted.csv
+4) Must be in the main directory, do not put in a seperate file called assets or similar.
     
 
 ### 4) Edit the config.json to your needs
