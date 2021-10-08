@@ -10,7 +10,7 @@ This repo is intended to be used with Candy Machine Mint site, or with my repo C
 Clone the repo (obviously)
 
 ### 1) Install dependencies using 
-		```yarn install```
+```yarn install```
 
 ### 2) Add your own environmental variables
 ```
