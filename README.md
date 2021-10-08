@@ -60,6 +60,13 @@ Install the heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
 #### Your_API_Key stands for the key you put in the env file in step 2
 
 Congratulations 🍰, you have now deployed your API online.
+#### to make sure everyting is working great:
+Grab the heroku url, or the url you hosted your api on. and then add /members to it
+```
+https://myherokyapp.herokuapp.com/whitelisted
+```
+You should see a list of your whitelisted members that you included in the csv file
+great that means your api is working.
 #### Grab the api key and heroku url and then integrate this with https://github.com/CryptoOutcasts/Candy_Machine_Whitelist_Site
 
 
