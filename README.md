@@ -17,6 +17,7 @@ Clone the repo (obviously)
 SECRET_KEY=__MY_KEY__
 ```
 Your API authentication key used to prevent someone else from accessing the api and updating whitelisted users
+#### after you are done rename ".env.sample" to ".env"
 
 
 ### 3) create a csv containing the list of whitelisted users and reserves for each user
