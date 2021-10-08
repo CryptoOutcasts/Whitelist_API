@@ -43,7 +43,7 @@ each row has a member which is the address of the user you wish to whitelist, re
 
 
 
-### 5) Upload to a hosting server, I used heroku. if you decide to use heroku here are the steps to setting that up:
+### 5) Upload to a hosting server, we recommend heroku. if you decide to use heroku here are the steps to setting that up:
 if you prefer tutorials, this one is good and features two options: https://www.youtube.com/watch?v=Rz886HkV1j4&t=733s
 #### IMPORTANT: MAKE SURE TO FOLLOW THE STEPS FOR ADDING .ENV TO THE HOSTING SYSTEM (included in the video)
 #### ALL COMMANDS SHOULD BE RAN IN THE MAIN DIRECTORY 
