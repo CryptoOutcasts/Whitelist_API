@@ -40,6 +40,8 @@ else{
     if(!config.loaded){
         config.loaded = true
         fs.writeFile('config.json', JSON.stringify(config), 'utf8', (err) =>{ if(err) console.log(err)});
+        csvToJson.fieldDelimiter(",")
+        csvToJson.generateJsonFileFromCsv("whitelisted.csv","whitelisted.json")
         console.log("Data reloaded due to config loaded = false")
     }
 }
