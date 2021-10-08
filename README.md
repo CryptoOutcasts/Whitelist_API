@@ -51,17 +51,19 @@ if you prefer tutorials, this one is good and features two options: https://www.
 #### IMPORTANT: MAKE SURE TO FOLLOW THE STEPS FOR ADDING .ENV TO THE HOSTING SYSTEM (included in the video)
 #### ALL COMMANDS SHOULD BE RAN IN THE MAIN DIRECTORY 
 Install the heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
+#### ITS IMPORTANT THAT YOU SAVE ALL THE FILES YOU EDITED INORDER FOR GIT TO RECOGNIZE CHANGES
 1. run: ```heroku login``` , and then login into your account.
 2. run ```git init```
-3. run ```heroku create Your_Project_Name```
+3. run ```heroku create Your_Project_Name``` heroku will then supply you with two urls, one of which is the url of the API, the other is not important (the one with github in it)
 4. run ```git add .```
 5. run ```git commit -m "first-commit```
-6. run ```git push heroku master``` heroku will then supply you with two urls, one of which is the url of the API, the other is not important (the one with github in it)
-7. after that is done run ```heroku config:set API_KEY=Your_API_Key```
-8. Your_API_Key stands for the key you put in the env file in step 2
+6. run ```git branch -M master```
+7. run ```git push heroku master```
+8. after that is done run ```heroku config:set API_KEY=Your_API_Key```
+#### Your_API_Key stands for the key you put in the env file in step 2
 
 Congratulations 🍰, you have now deployed your API online.
-Next integrate this with my repo @ Candy_Machine_Whitelist_Site
+#### Grab the api key and heroku url and then integrate this with https://github.com/CryptoOutcasts/Candy_Machine_Whitelist_Site
 
 
 
