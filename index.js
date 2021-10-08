@@ -6,6 +6,7 @@ const cors=require("cors");
 const { once } = require("events");
 const e = require("express");
 const { json } = require("express");
+require('dotenv').config()
 
 app.use(exp.json());
 const corsOptions ={
@@ -60,7 +61,11 @@ app.get('/whitelisted/member/:address', (req, res, value) => {
     res.send(user);
 })
 
-app.put('/whitelisted/update/:address', (req, res) => {
+app.put('/whitelisted/update/:address/:secret', (req, res) => {
+    if(req.params.secret != process.env.SECRET_KEY){
+        res.status(404).send("Invalid Auth Key")
+        return
+    }
     let index = 0;
     let result = {}
     let rawdata = fs.readFileSync('whitelisted.json');
@@ -73,6 +78,7 @@ app.put('/whitelisted/update/:address', (req, res) => {
     });
     if(result == {}){
         res.status(404).send("User does not exist")
+        return
     }
     result.reserve = req.body.reserve
     members[index] = result;
