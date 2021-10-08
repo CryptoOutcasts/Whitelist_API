@@ -25,7 +25,7 @@ Your API authentication key used to prevent someone else from accessing the api 
 #### REQUIREMENTS FOR CSV FILE:
 1) Must be comma delimted
 2) Must have two Columns: 1)member 2)reserve , Its important to name the two columns exactly like this
-![example](https://imgur.com/PnJaoj2)
+![example](https://i.imgur.com/PnJaoj2.png)
 ```
 each row has a member which is the address of the user you wish to whitelist, reserve is how many nfts can they this address mint
 ```
