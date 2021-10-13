@@ -57,7 +57,7 @@ Install the heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
 5. run ```git commit -m "first-commit```
 6. run ```git branch -M master```
 7. run ```git push heroku master```
-8. after that is done run ```heroku config:set API_KEY=Your_API_Key```
+8. after that is done run ```heroku config:set SECRET_KEY=Your_API_Key```
 #### Your_API_Key stands for the key you put in the env file in step 2
 
 Congratulations 🍰, you have now deployed your API online.
